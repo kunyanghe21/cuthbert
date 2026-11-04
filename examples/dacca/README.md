@@ -118,7 +118,6 @@ The completed Dacca comparison is kept in
 [`pypomp/comparisons`](https://github.com/pypomp/comparisons), including its
 [numerical checks](https://github.com/pypomp/comparisons/blob/55a7f6f3407c8dc1d7a2f643ede6597682481292/reports/correctness.md)
 and [optimization results](https://github.com/pypomp/comparisons/blob/55a7f6f3407c8dc1d7a2f643ede6597682481292/reports/optimization.md).
-That repository currently requires access permission; please ask us if it is
-not visible to you. The example and tests here are self-contained.
+The example and tests here are self-contained.
 The linked results use the source and settings recorded with those experiments.
 This example runs only the small check described above.
