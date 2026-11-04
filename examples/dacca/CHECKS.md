@@ -14,10 +14,17 @@ Checked on 3 November 2026 with CPU JAX/JAXlib 0.12.0.1.
   machine. These values are a run record, not a scoring-precision assessment or
   a promise of identical values on other devices and JAX versions.
 
-The IF2 implementation is unchanged from the saved Dacca comparison. The helper
-module omits the unused optimizer interface. The Dacca model has formatting,
+The IF2 implementation is unchanged from the Dacca comparison recorded in
+[`pypomp/comparisons`](https://github.com/pypomp/comparisons). Its
+[numerical checks](https://github.com/pypomp/comparisons/blob/55a7f6f3407c8dc1d7a2f643ede6597682481292/reports/correctness.md)
+and [optimization results](https://github.com/pypomp/comparisons/blob/55a7f6f3407c8dc1d7a2f643ede6597682481292/reports/optimization.md)
+describe the full experiment, including failed checks and fits. That repository
+currently requires access permission; please ask us if it is not visible to you.
+The small tests in this branch can be run without access to it.
+
+The helper module omits the unused optimizer interface. The Dacca model has formatting,
 docstrings and local data-loading changes; its equations and data are unchanged.
-The alpha-only branch and original Cuthbert filter/resampling code are unchanged.
+The original Cuthbert filter and resampling implementations are unchanged.
 
 These checks used existing local dependencies. They do not constitute a full
 upstream CI run or a fresh dependency-resolution test. No completed Dacca
