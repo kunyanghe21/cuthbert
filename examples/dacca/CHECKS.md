@@ -11,8 +11,8 @@ Checked on 3 November 2026 with CPU JAX/JAXlib 0.12.0.1.
 - The default float32 example completed two IF2 iterations with 32 particles
   over 12 months. Two independent ordinary-PF evaluations were finite and above
   the density floor. Their log likelihoods were -76.691017 and -76.739929 on this
-  machine. These values are a run record, not a scoring-precision assessment or
-  a promise of identical values on other devices and JAX versions.
+  machine. Two evaluations do not establish scoring precision, and results may
+  differ across devices or JAX versions.
 
 The IF2 implementation is unchanged from the Dacca comparison recorded in
 [`pypomp/comparisons`](https://github.com/pypomp/comparisons). Its
@@ -22,10 +22,11 @@ describe the full experiment, including failed checks and fits. That repository
 currently requires access permission; please ask us if it is not visible to you.
 The small tests in this branch can be run without access to it.
 
-The helper module omits the unused optimizer interface. The Dacca model has formatting,
-docstrings and local data-loading changes; its equations and data are unchanged.
+The helper module omits the unused optimizer interface. The Dacca model has
+formatting, docstrings and local data-loading changes; its equations and data
+are unchanged.
 The original Cuthbert filter and resampling implementations are unchanged.
 
-These checks used existing local dependencies. They do not constitute a full
-upstream CI run or a fresh dependency-resolution test. No completed Dacca
-optimization experiment was rerun for this branch.
+The checks used the existing local environment. Full upstream CI and installation
+with freshly resolved dependencies have not been run. The completed Dacca
+optimization experiments were not rerun for this branch.
